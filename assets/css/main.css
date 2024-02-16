@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #252122;
+		background: #292726;
 		background-image: url("images/bg02.png");
 	}
 
@@ -2206,13 +2206,18 @@ input, select, textarea {
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
+		height: 200px; /* Adjusted height */
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
-			display: inline-block;
-			padding: 2.5em 5em;
-			border-radius: 5px;
+    background-color: rgba(34, 30, 31, 0.3);
+    display: inline-block;
+    padding: 2.5em 5em;
+    border-radius: 5px;
+    border: 2px solid rgba(34, 30, 31, 0.1); /* Setting border color */
 		}
 
 			#banner header h2 {
