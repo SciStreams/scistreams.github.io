@@ -173,6 +173,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		font-size: 13pt;
 	}
 
 /* Container */
