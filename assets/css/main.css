@@ -1982,6 +1982,9 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
+		width:130px;
+		height: 130px;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
 	}
 
 		.icon:before {
@@ -2029,6 +2032,7 @@ input, select, textarea {
 			border-top-right-radius: 5px;
 			margin: 0 0 4.5em 0;
 			cursor: default;
+
 		}
 
 			.icon.featured:before {
@@ -2042,11 +2046,11 @@ input, select, textarea {
 			.icon.featured:after {
 			  content: '';
 			  position: absolute;
-			  bottom: -1.95em;
-			  left: 0;
-			  border-top: solid 2em var(--featured-color);
-			  border-left: solid 4.5em transparent;
-			  border-right: solid 4.5em transparent;
+			    bottom: 0;
+			    left: 50%;
+			    transform: translateX(-60%);
+			    width: 0;
+			    height: 0;
 			}
 
 			.icon.featured.alt {
