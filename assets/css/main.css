@@ -2073,6 +2073,11 @@ input, select, textarea {
 		    --featured-alt2-color: #827a7c; /* Adjust to lighter color */
 		  }
 		}
+		@media (prefers-color-scheme: dark) {
+  			.icon.featured:after {
+    		border-top-color: #ffffff; /* Lighter color for dark mode */
+  			}
+		}
 
 
 /* Page Wrapper */
