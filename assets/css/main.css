@@ -2031,31 +2031,48 @@ input, select, textarea {
 				color: #fff;
 			}
 
+			:root {
+			  --featured-color: #252525;
+			  --featured-alt-color: #525252;
+			  --featured-alt2-color: #827a7c;
+			}
+
+			/* Default styles for light mode */
 			.icon.featured:after {
-				content: '';
-				position: absolute;
-				bottom: -1.95em;
-				left: 0;
-				border-top: solid 2em #252525;
-				border-left: solid 4.5em transparent;
-				border-right: solid 4.5em transparent;
+			  content: '';
+			  position: absolute;
+			  bottom: -1.95em;
+			  left: 0;
+			  border-top: solid 2em var(--featured-color);
+			  border-left: solid 4.5em transparent;
+			  border-right: solid 4.5em transparent;
 			}
 
 			.icon.featured.alt {
-				background-color: #525252;
+			  background-color: var(--featured-alt-color);
 			}
 
-				.icon.featured.alt:after {
-					border-top-color: #525252;
-				}
+			.icon.featured.alt:after {
+			  border-top-color: var(--featured-alt-color);
+			}
 
 			.icon.featured.alt2 {
-				background-color: #827a7c;
+			  background-color: var(--featured-alt2-color);
 			}
 
-				.icon.featured.alt2:after {
-					border-top-color: #827a7c;
-				}
+			.icon.featured.alt2:after {
+			  border-top-color: var(--featured-alt2-color);
+			}
+
+		/* Adjustments for dark mode */
+		@media (prefers-color-scheme: dark) {
+		  :root {
+		    --featured-color: #252525; /* Adjust to white or any other light color */
+		    --featured-alt-color: #525252; /* Adjust to lighter color */
+		    --featured-alt2-color: #827a7c; /* Adjust to lighter color */
+		  }
+		}
+
 
 /* Page Wrapper */
 
