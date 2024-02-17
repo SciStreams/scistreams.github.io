@@ -2213,32 +2213,15 @@ input, select, textarea {
 		display: flex;
     	align-items: center;
     	justify-content: center;
-		/* Dark mode media query */
-		@media (prefers-color-scheme: dark) {
-		    #banner {
-		        /* Switch to dark mode background */
-		        background: var(--banner-dark-background);
-		        background-position: center center;
-				background-size: auto 100%;
-				background-repeat: no-repeat;
-				text-align: center;
-				position: relative;
-				padding: 8em 0;
-				margin: 4em 0 0 0;
-				height: 200px; /* Adjusted height */
-				display: flex;
-		    	align-items: center;
-		    	justify-content: center;
-		    }
-		}
+
 	}
 
 		#banner header {
     background-color: rgba(34, 30, 31, 0.3);
     display: inline-block;
     padding: 2.5em 5em;
-    border-radius: 5px;
-    border: 2px solid rgba(34, 30, 31, 0.1); /* Setting border color */
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(34, 30, 31, 0.5);
 		}
 
 			#banner header h2 {
