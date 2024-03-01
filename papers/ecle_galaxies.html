@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Maskfill - SciStreams</title>
+		<title>ECLE Galaxies - SciStreams</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -18,7 +18,7 @@
 				<section id="header">
 
 					<!-- Logo -->
-						<h1><a href="#">Maskfill - SciStreams</a></h1>
+						<h1><a href="#">ECLE Galaxies - SciStreams</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -34,8 +34,8 @@
 										<li><a href="#">...</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Research Papers</a></li>
-								<li  class="current"><a href="#">Python Packages</a></li>
+								<li class="current"><a href="#">Research Papers</a></li>
+								<li ><a href="#">Python Packages</a></li>
 								<li><a href="#">Science Datasets</a></li>
 							</ul>
 						</nav>
@@ -51,37 +51,51 @@
 								<!-- Content -->
 									<article class="box post">
 										<header>
-											<h2>Maskfill</h2>
-											<p>Maskfill is a new method for filling in masked emission in astronomical images</p>
+											<h2>Long-term follow-up observations of extreme coronal line emitting galaxies</h2>
+											<p>Paper by Clark et al. 2024</p>
 										</header>
 										<p>
-											This Streamlit app showcase examples from <a href="https://github.com/dokkum/maskfill/tree/main" target="_blank">maskfill</a> Python package. Original maskfill Python package is made by Pieter van Dokkum & Imad Pasha, see <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv231203064V/abstract" target="_blank">van Dokkum & Pasha (2024)</a>
+											This Streamlit app showcase sample of galaxies from <a href="https://academic.oup.com/mnras/article/528/4/7076/7609067?login=false" target="_blank">Clark et al. 2024.</a>
+											They presented new spectroscopic and photometric follow-up observations of the known sample of extreme coronal line-emitting galaxies (ECLEs) identified in the Sloan Digital Sky Survey (SDSS).
 										</p>
 
 										<section>
 											<header>
-												<h3><a href="https://maskfill-scistreams.streamlit.app/" target="_blank">Maskfill App</a></h3>
+												<h3><a href="https://ecle-galaxies-scistreams.streamlit.app/" target="_blank">ECLE Galaxies App</a></h3>
 											</header>
 											<p>
-												<b>SciStreams</b> aims to help researchers by making their science more accessible through interactive web applications. Below we present home page of <a href="https://maskfill-scistreams.streamlit.app/" target="_blank">Maskfill App</a>, where you can see example of Image and Mask as well as an initial maskfill results.
+												Below we present <a href="https://ecle-galaxies-scistreams.streamlit.app/" target="_blank">ECLE Galaxies App</a>, where you can interact with spectra of galaxies that were presented in <a href="https://academic.oup.com/mnras/article/528/4/7076/7609067?login=false" target="_blank">Clark et al. 2024</a> research.
 											</p>
-											<span class="image main"><img src="../images/maskfill_app.png" alt="" /></span>
+											<p>
+												With this app, you can interactively explore full sample of galaxies, select sub-sabples based on variability, and you can chose individual galaxies.
+
+											</p>
+											<span class="image main"><img src="../images/papers/ecle_full_sample.png" alt="" /></span>
 
 											<hr></hr>
 
 											<p>
-												Compare results page allows you to interactively adjust image range - so you can enhance fainter regions and examing residuals after maskfill run.
+												You san further select sub-samples of galaxies based on their properties: whether they are determined to be variable or non variable. Furthermore, it 
+												is possible to show each galaxy on a suplot.
 											</p>
-											<span class="image main"><img src="../images/maskfill_compare.png" alt="" /></span>
+											<span class="image main"><img src="../images/papers/ecle_variable_subplot.png" alt="" /></span>
 											
 											<hr></hr>
 
 											<p>
-												Optional arguments allows you to examing selection of the window size, which controls how many adjacent pixels are used for computation of the local medians. You can chose to examing single kernel size, or see multiple kernels next to each other.
+												One can turn on all spectral lines or just select which spectral lines they want to mark on plots. For example, if wanting to have a closer look at the
+												coronal Fe spectral lines.
 											</p>
 
-											<span class="image main"><img src="../images/maskfill_window_size.png" alt="" /></span>
+											<span class="image main"><img src="../images/papers/ecle_spectra_lines.png" alt="" /></span>
 
+											<hr></hr>
+
+											<p>
+												In case of "Subplots", if you zoom into one plot, all plots from the page will be zoomed into the same region.
+											</p>
+
+											<span class="image main"><img src="../images/papers/ecle_spectra_zoom.png" alt="" /></span>
 
 										</section>
 
@@ -94,7 +108,7 @@
 
 									<section class="box">
 										<header>
-											<h3><a href="https://maskfill-scistreams.streamlit.app/" target="_blank">Maskfill App</a></h3>
+											<h3><a href="https://ecle-galaxies-scistreams.streamlit.app/" target="_blank">ECLE Galaxies App</a></h3>
 										</header>
 										
 									</section>
@@ -129,7 +143,7 @@
 										</li>
 										<li>
 											<span class="date">Mar <strong>2</strong></span>
-											<h3><a href="../papers/ecle_galaxies.html">ECLE Galaxies</a></h3>
+											<h3><a href="#">ECLE Galaxies</a></h3>
 											<p>Long-term follow-up observations of extreme coronal line emitting galaxies.</p>
 										</li>
 										<li>
